@@ -1,0 +1,9 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'result.css' %}" />
+<div id='result-container'>
+    <div id='text-container'>
+        <h1 id="result-text">Stock Ticker: {{ text }}</h1>
+    </div>
+<img src="{{ result }} " alt="Stock Price Chart" id = "chart">
+</div>

@@ -1,0 +1,10 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'base.css' %}" />
+<div id='app'>
+    <h1>Stock Chart Generator</h1>
+    <form action="/custom_post/" method="post"> {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+</div>
